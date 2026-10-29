@@ -1,0 +1,29 @@
+
+agentic ai mayank email: mailtomayanaggarwal@gmail.com
+
+
+git config commands :
+  git config --global user.email "reddymaestro12@gmail.com"
+  git config --global user.name "reddymaestro12"
+  git config --global user.name "venkateswara reddy"
+ultimate genai setup:
+vscode 
+create a folder and open it with vscode
+open a terminal in vscode 
+install uv in windows using - winget install --id astral-sh.uv -e
+test uv installation : uv --version output : uv 0.12.10 
+
+install python using uv : uv python install 3.12
+to pin a python version to a project : uv python pin 3.12
+create project files for project  : uv init
+to create the venv use : uv sync 
+     - reads pyproject.toml file and creates the venv
+     - uv.lock file and src folder will be created 
+     - to add a library using uv : uv add library_name example: uv add numpy
+     - to remove library : uv remove numpy
+activate the venv to execute the .py files : E:\genai\.venv\Scripts\activate
+output : (ultimategenai-ws) E:\ultimategenai_ws>
+to run the python file : uv run python hello.py
+
+to check python list in vscode using uv : uv python list
+
