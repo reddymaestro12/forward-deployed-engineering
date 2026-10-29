@@ -1,14 +1,13 @@
 class InsufficientBalanceError(Exception):
     pass
 
+
 balance = 1000
 withdrawal = 1500
 
 if withdrawal > balance:
-    raise InsufficientBalanceError(
-        "Withdrawal amount exceeds account balance"
-    )
-#with try,excpet,else,finally,raise
+    raise InsufficientBalanceError("Withdrawal amount exceeds account balance")
+# with try,excpet,else,finally,raise
 try:
     amount = int(input("Enter withdrawal amount: "))
 

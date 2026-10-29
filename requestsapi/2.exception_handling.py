@@ -1,5 +1,4 @@
-import os
-def exception_handling(a,b):
+def exception_handling(a, b):
     try:
         result = a / b
     except ZeroDivisionError:
@@ -8,6 +7,6 @@ def exception_handling(a,b):
         print(f"result is {result}")
     finally:
         print("closing the resources")
-        
 
-exception_handling(10,0)
+
+exception_handling(10, 0)
