@@ -1,0 +1,19 @@
+- ThreadPoolExecutor(TPE) is a high-level API from Python's concurrent.futures module that manages a pool of worker threads for you.
+- wihtout TPE we need to create and manage the threads manually like below 
+    import threading
+
+    t1 = threading.Thread(target=task)
+    t2 = threading.Thread(target=task)
+
+    t1.start()
+    t2.start()
+
+    t1.join()
+    t2.join()
+
+- with TPE ,The executor creates, manages, reuses, and cleans up threads automatically.
+
+from concurrent.futures import ThreadPoolExecutor
+with ThreadPoolExecutor(max_workers=2) as executor:
+    executor.submit(task)
+    executor.submit(task)
