@@ -1,0 +1,18 @@
+source : https://realpython.com/async-io-python/
+
+Threading is good for I/O-bound tasks. 
+An I/O-bound job is dominated by a lot of waiting on input/output (I/O) to complete, 
+A CPU-bound task is characterized by the computer’s cores continually working hard from start to finish.
+---------------------------------------------------------------------------------------
+The Python standard library has offered longstanding support for these models through its multiprocessing, concurrent.futures, and threading packages.
+a separate model has been more comprehensively built into CPython: asynchronous I/O, commonly called async I/O. This model is enabled through the standard library’s asyncio package and the async and await keywords.
+----------------------------------------------------------------------------------------
+async I/O isn’t threading or multiprocessing
+Async I/O is a single-threaded, single-process technique that uses cooperative multitasking.
+async I/O is a model of concurrent programming, but it’s not parallelism. It’s more closely aligned with threading than with multiprocessing, but it’s different from both and is a standalone member of the concurrency ecosystem.
+
+Coroutines—or coro for short—are a central feature of async I/O and can be scheduled concurrently, but they’re not inherently concurrent.
+
+1.Asynchronous routines can pause their execution while waiting for a result and allow other routines to run in the meantime.
+2.Asynchronous code facilitates the concurrent execution of tasks by coordinating asynchronous routines.
+

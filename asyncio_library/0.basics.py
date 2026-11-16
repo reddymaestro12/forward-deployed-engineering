@@ -1,0 +1,8 @@
+import time,asyncio
+
+async def say_after(delay, what):
+    await asyncio.sleep(delay)
+    print(what)
+
+
+asyncio.run(say_after(1, 'hello'))
